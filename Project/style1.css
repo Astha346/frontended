@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+  font-family: Arial, sans-serif;
+}
+
+.slider {
+  position: relative;
+  width: 70%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+
+.slider input {
+  display: none;
+}
+
+
+.images {
+  display: flex;
+  width: 500%; 
+  transition: transform 0.5s ease-in-out;
+}
+
+.images img {
+  width: 20%; 
+  height: 400px;
+  object-fit: cover;
+}
+
+
+#img1:checked ~ .images { transform: translateX(0%); }
+#img2:checked ~ .images { transform: translateX(-20%); }
+#img3:checked ~ .images { transform: translateX(-40%); }
+#img4:checked ~ .images { transform: translateX(-60%); }
+#img5:checked ~ .images { transform: translateX(-80%); }
+
+
+.dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.dots label {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+
+#img1:checked ~ .dots label[for="img1"],
+#img2:checked ~ .dots label[for="img2"],
+#img3:checked ~ .dots label[for="img3"],
+#img4:checked ~ .dots label[for="img4"],
+#img5:checked ~ .dots label[for="img5"] {
+  background: white;
+}

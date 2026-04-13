@@ -1,0 +1,22 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+}
+.box{
+height: 100px;
+width: 100px;
+background-color: green;
+border: 5px solid red;
+overflow: hidden;
+border-top-right-radius: 30px;
+border-bottom-left-radius: 30px;
+}
+
+button{
+    padding: 10px 50px 10px 50px
+}

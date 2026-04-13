@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    
+    <h1>Massive HTML Form Interface</h1>
+    <h2>Profile Information</h2>
+    <label for="firstname">FirstName:</label>
+    <input type="text" id="firstname" placeholder="Enter your firstname">
+    <br>
+    <label for="username">UserName:</label>
+    <input type="text" id="username" placeholder="Enter your username">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password">
+    <br>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone">
+    <br>
+    <label for="date">Date:</label>
+    <input type="date">
+    <br>
+     <label for="file">Profile image:</label>
+     <input type="file">
+     <br>
+     <label for="upload resume">Upload Resume:</label>
+     <input type="file">
+     <br>
+     <input type="Submit" value="Save Profile">
+     <hr>
+    
+     <!--user preference-->
+     
+     <h2>User Preference</h2>
+     <label for="theme">Theme:</label>
+     <select name="theme" id="theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+     </select>
+     <br>
+     <label for="notification">Notification:</label>
+     <br>
+     <label>
+  <input type="checkbox" id="notification" name="notification_type" value="email"> Email
+</label>
+<br>
+<label>
+  <input type="checkbox" name="notification_type" value="sms"> SMS
+</label>
+<br>
+<label>
+<input type="checkbox" name="notification_type" value="push notification"> Push Notification
+</label>
+<br>
+<label for="language">Preferred Language:</label>
+<select name="language" id="language">
+
+<option value="english">English</option>
+<option value="nepali">Nepali</option>
+<option value="hindi">Hindi</option>
+</select>
+<br>
+<label for="textsize">Text Size:</label>
+<input type="range">
+<br>
+<input type="Submit" value="Save preference">
+<hr>
+
+<!--surveyform-->
+<h2>Survey Form</h2>
+<label for="media">How did you hear about us? </label>
+<br>
+<label>
+  <input type="radio" id="media" name="media" value="social media"> Social Media
+</label>
+<br>
+<label>
+  <input type="radio" name="media" value="friend"> Friend
+</label>
+<br>
+<label>
+<input type="radio" name="media" value="advertisement"> Advertisement
+</label>
+<br>
+<label for="recommend">Would you recommend us? </label>
+<br>
+<label>
+  <input type="radio" id="recommend" name="recommend" value="yes"> Yes
+</label>
+<br>
+<label>
+  <input type="radio" name="recommend" value="no"> No
+</label>
+<p>How was your experience?</p>
+<textarea name="" id="">Write here...</textarea>
+<br>
+<label for="file">Screenshot(if any):</label>
+     <input type="file" id="file">
+     <hr>
+     <!--product feedback-->
+ <h2>Product Feedback</h2>
+ <label for="productid">Product Id:</label>
+ <input type="text">
+ <br>
+ <label for="rating">Rating (1to5):</label>
+ <input type="number">
+ <br>
+ <label for="producttype">Product Type:</label>
+     <select name="producttype" id="producttype">
+        <option value="softwere">Softwere</option>
+        <option value="hardwere">Hardwere</option>
+     </select>
+     <br>
+     <label for="tags">Tags:</label>
+     <br>
+     <label>
+  <input type="checkbox" name="tags" value="easy to use"> Easy to use
+</label>
+<br>
+<label>
+  <input type="checkbox" name="tags" value="fast"> Fast
+</label>
+<br>
+<label>
+<input type="checkbox" name="tags" value="secure"> Secure
+</label>
+<br>
+<label>
+<input type="checkbox" name="tags" value="buggy"> Buggy
+</label>
+<br>
+<p>Detailed Feedback</p>
+<textarea name="" id=""></textarea>
+<br>
+<input type="Submit" value="Submit feedback">
+<hr>
+</body>
+</html>

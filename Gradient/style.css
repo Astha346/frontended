@@ -1,0 +1,51 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh; 
+}
+
+
+.box, .box1, .box2 {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    
+}
+
+
+.box {
+
+    background: repeating-linear-gradient(
+        45deg,
+        lightblue 0px,
+        lightblue 80px, 
+    salmon 20px 200px 
+    );
+}
+
+.box1 {
+    background: radial-gradient(
+        circle at center,
+        pink 0%,
+        purple 30%,
+        blue 100%
+    );
+}
+
+
+.box2 {
+    background: repeating-conic-gradient(
+        yellow 0deg 10deg,
+        red 10deg 20deg
+    );
+}
