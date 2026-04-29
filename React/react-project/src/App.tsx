@@ -1,12 +1,13 @@
 import Navbar from "./components/Navbar/Navbar";
-  import HeroSection from "./components/Hero/HeroSection";
+import HeroSection from "./components/Hero/HeroSection";
+import Footer from "./components/Footer/footer";
 
 const App = () => {
   return (
     <div>
       <Navbar />
-    <HeroSection />
-  
+      <HeroSection />
+      <Footer />
     </div>
   );
 };
